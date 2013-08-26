@@ -1,0 +1,31 @@
+LABEL SYSTEMRESCUEX32X
+MENU LABEL ^SystemRescueCD x86 Start X
+KERNEL er/plugins/sysrescue/rescuecd
+APPEND INITRD=er/plugins/sysrescue/initram.igz netboot=http://10.0.0.1/er/sysrescue/sysrcd.dat setkmap=us ramdisk_size=500000 boothd=/dev/ram0 dostartx
+TEXT HELP
+                 SystemRescueCD i386 - Gentoo Based
+ENDTEXT
+
+LABEL SYSTEMRESCUEX32
+MENU LABEL ^SystemRescueCD x86 CLI
+KERNEL er/plugins/sysrescue/rescuecd
+APPEND INITRD=er/plugins/sysrescue/initram.igz netboot=http://10.0.0.1/er/sysrescue/sysrcd.dat setkmap=us ramdisk_size=500000 boothd=/dev/ram0
+TEXT HELP
+                 SystemRescueCD - i386 Gentoo Based
+ENDTEXT
+
+LABEL SYSTEMRESCUEX64X
+MENU LABEL ^SystemRescueCD x64 Start X
+KERNEL er/plugins/sysrescue/rescue64
+APPEND INITRD=er/plugins/sysrescue/initram.igz netboot=http://10.0.0.1/er/sysrescue/sysrcd.dat setkmap=us ramdisk_size=500000 boothd=/dev/ram0 dostartx
+TEXT HELP
+                 SystemRescueCD - x86_64 Gentoo Based
+ENDTEXT
+
+LABEL SYSTEMRESCUEX64
+MENU LABEL ^SystemRescueCD x64 CLI
+KERNEL er/plugins/sysrescue/rescue64
+APPEND INITRD=er/plugins/sysrescue/initram.igz netboot=http://10.0.0.1/er/sysrescue/sysrcd.dat setkmap=us ramdisk_size=500000 boothd=/dev/ram0
+TEXT HELP
+                 SystemRescueCD - x86_64 Gentoo Based
+ENDTEXT

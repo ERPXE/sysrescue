@@ -1,0 +1,7 @@
+.:
+filelist.txt
+initram.igz
+rescue64
+rescuecd
+sysrescuemain.menu
+sysrescue.menu
