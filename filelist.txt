@@ -2,6 +2,6 @@
 filelist.txt
 initram.igz
 rescue64
-rescuecd
+rescue32
 sysrescuemain.menu
 sysrescue.menu
